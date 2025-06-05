@@ -9,5 +9,7 @@ package c22025.clase4;
  * @author viti
  */
 public class Carro {
+    public String marca;
+    
     
 }

@@ -4,6 +4,8 @@
  */
 package c22025.clase4;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author viti
@@ -20,13 +22,21 @@ public class C22025Clase4 {
         Persona kata = new Persona();
         Persona juan = new Persona();
         Persona julia = new Persona();
+        Carro carro = new Carro();
+        carro.marca="BYD";
         
         
         juan.cedula=22;
         juan.nombre="Juan C A";
         juan.salario=1000000;
-        juan.edad=26;
+        juan.edad=16;
         juan.gritarFrase();
+        juan.carro=carro;
+        JOptionPane.showMessageDialog(null, "EDAD: "+juan.mentiraEdad());
+        JOptionPane.showMessageDialog(null, "EDADCorrecta: "+juan.edad);
+         JOptionPane.showMessageDialog(null, "El carro de Juan: "+juan.carro.marca);
+        
+        
                 
         
         kata.cedula=11;
